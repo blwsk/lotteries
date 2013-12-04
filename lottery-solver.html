@@ -171,11 +171,11 @@
         outcomeSimilarityValue = x1 / x2; // 1.33
         if ( outcomeSimilarityValue > outcomeSimilarityFactor ) {
           outcomeSimilar = false;
-          alert('outcomes are not similar')
+          /*alert('outcomes are not similar')*/
         }
         else {
           outcomeSimilar = true; // check
-          alert('outcomes are similar')
+          /*alert('outcomes are similar')*/
         }
       }
       else {
@@ -183,11 +183,11 @@
         outcomeSimilarityValue = x2 / x1;
         if ( outcomeSimilarityValue > outcomeSimilarityFactor ) {
           outcomeSimilar = false;
-          alert('outcomes are not similar')
+          /*alert('outcomes are not similar')*/
         }
         else {
           outcomeSimilar = true;
-          alert('outcomes are similar')
+          /*alert('outcomes are similar')*/
         }
       }
 
@@ -197,11 +197,11 @@
         probabilitySimilarityValue = p1 - p2;
         if ( probabilitySimilarityValue > probabilitySimilarityFactor ) {
           probabilitySimilar = false;
-          alert('probs are not similar');
+          /*alert('probs are not similar');*/
         }
         else {
           probabilitySimilar = true;
-          alert('probs are similar');
+          /*alert('probs are similar');*/
         }
       }
       else {  // yes
@@ -209,11 +209,11 @@
         probabilitySimilarityValue = p2 - p1; // 0.05
         if ( probabilitySimilarityValue > probabilitySimilarityFactor ) {
           probabilitySimilar = false;
-          alert('probs are not similar');
+          /*alert('probs are not similar');*/
         }
         else {
           probabilitySimilar = true;  // check
-          alert('probs are similar');
+          /*alert('probs are similar');*/
         }
       }
 
@@ -228,7 +228,7 @@
         result = 'The outcomes and probabilities are both too similar to make this a reasonable means of determining preference.';
       }
       else if ( outcomeSimilar==true && probabilitySimilar==false ) {
-        alert('1');
+        /*alert('1');*/
         /*
           The outcomes are similar. Use probability as the determining factor.
         */
@@ -243,7 +243,7 @@
         }
       }
       else if ( probabilitySimilar==true && outcomeSimilar==false ) {
-        alert('2')
+        /*alert('2')*/
         /*
           The probabilities are similar. Use outcome as the determining factor.
         */
@@ -258,7 +258,7 @@
         }
       }
       else {
-        alert('3');
+        /*alert('3');*/
         /*
           Both the outcomes and probabilities are dissimilar. Whichever are more similar, use the others.
         */
